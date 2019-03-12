@@ -13,7 +13,6 @@ public class TabPagerAdapter extends FragmentPagerAdapter {
             case 0: return new Tab1Fragment();
             case 1: return new Tab2Fragment();
             case 2: return new Tab3Fragment();
-            case 3: return new Tab4Fragment();
             default: return null;
         }
     }
