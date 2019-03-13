@@ -11,7 +11,7 @@ import android.view.ViewGroup;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class Tab2Fragment extends Fragment {
+public class Tab2Fragment extends Fragment implements View.OnClickListener {
 
 
     public Tab2Fragment() {
@@ -19,11 +19,19 @@ public class Tab2Fragment extends Fragment {
     }
 
 
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_tab2, container, false);
+        View v = inflater.inflate(R.layout.fragment_tab2, container, false);
+
+        Button b = (Button)v.findViewById(R.id.button); // Acquire button reference
+        b.setOnClickListener(this);                     // Set event handler
+
+        return v;
+
+    }
+    public void onclick(View v){
+
     }
 
 }

@@ -8,26 +8,25 @@
     tools:context=".FarenheitToCelcius">
 
     <!-- TODO: Update blank fragment layout -->
-
     <TextView
-        android:id="@+id/txtMilestoKiloMeter"
-        android:layout_width="387dp"
+        android:id="@+id/txtFarenHeittoCelcisu"
+        android:layout_width="360dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="32dp"
-        android:layout_marginEnd="32dp"
+        android:layout_marginEnd="8dp"
         android:layout_marginBottom="16dp"
-        android:text="@string/miles_to_klilometer_calculator"
+        android:text="@string/fahrenheit_to_celsius_converter"
         android:textAlignment="center"
         android:textAllCaps="false"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/txtMiles"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtFarenheit"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/txtMiles"
+        android:id="@+id/txtFarenheit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -35,17 +34,18 @@
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="16dp"
         android:ems="10"
-        android:hint="@string/enter_miles"
+        android:hint="@string/enter_fareheit"
         android:importantForAutofill="no"
         android:inputType="number"
-        app:layout_constraintBottom_toTopOf="@+id/txtKiloMeter"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtCelcius"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtMilestoKiloMeter"
+        app:layout_constraintTop_toBottomOf="@+id/txtFarenHeittoCelcisu"
         tools:targetApi="o" />
 
     <EditText
-        android:id="@+id/txtKiloMeter"
+        android:id="@+id/txtCelcius"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -53,26 +53,29 @@
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="16dp"
         android:ems="10"
-        android:hint="@string/enter_kilometer"
+        android:hint="@string/enter_celcius"
         android:importantForAutofill="no"
         android:inputType="number"
-        app:layout_constraintBottom_toTopOf="@+id/btnCalculateDistance"
+        app:layout_constraintBottom_toTopOf="@+id/btnCalculate"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtMiles"
+        app:layout_constraintTop_toBottomOf="@+id/txtFarenheit"
         tools:targetApi="o" />
 
     <Button
-        android:id="@+id/btnCalculateDistance"
+        android:id="@+id/btnCalculate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginBottom="46dp"
-        android:text="@string/calculate"
+        android:layout_marginBottom="32dp"
+        android:text="@string/calculate_degree"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtKiloMeter" />
+        app:layout_constraintTop_toBottomOf="@+id/txtCelcius" />
+
+
 </android.support.constraint.ConstraintLayout>
