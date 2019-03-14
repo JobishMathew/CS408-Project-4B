@@ -13,13 +13,13 @@ import android.widget.EditText;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class FarenheitToCelcius extends Fragment implements View.OnClickListener{
+public class FtoCFR extends Fragment implements View.OnClickListener{
 
     Button b;
     EditText faren;
     EditText ceclius;
 
-    public FarenheitToCelcius() {
+    public FtoCFR() {
         // Required empty public constructor
     }
 
@@ -28,7 +28,7 @@ public class FarenheitToCelcius extends Fragment implements View.OnClickListener
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
         // Inflate the layout for this fragment
-        View v = inflater.inflate(R.layout.FarenheitToCelcius, container, false);
+        View v = inflater.inflate(R.layout.farenheighttocelcius, container, false);
 
          b = (Button)v.findViewById(R.id.btnCalculate); // Acquire button reference
          faren = (EditText)v.findViewById(R.id.txtFarenheit);
@@ -39,7 +39,7 @@ public class FarenheitToCelcius extends Fragment implements View.OnClickListener
 
     }
 
-    public void onlclick(View v){
+    public void onClick(View v){
         String f = faren.getText().toString();
         String c =ceclius.getText().toString();
 

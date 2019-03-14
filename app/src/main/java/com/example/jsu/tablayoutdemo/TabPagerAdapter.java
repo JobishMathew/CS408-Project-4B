@@ -10,9 +10,9 @@ public class TabPagerAdapter extends FragmentPagerAdapter {
     @Override
     public Fragment getItem(int position) {
         switch (position) {
-            case 0: return new FarenheitToCelcius();
-            case 1: return new Tab2Fragment();
-            case 2: return new Tab3Fragment();
+            case 0: return new FtoCFR();
+            case 1: return new MilesKiloFR();
+            case 2: return new TipFR();
             default: return null;
         }
     }

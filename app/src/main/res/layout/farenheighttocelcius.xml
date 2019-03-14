@@ -5,7 +5,7 @@
     android:id="@+id/frameLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FarenheitToCelcius">
+    tools:context=".FtoCFR">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
@@ -19,7 +19,7 @@
         android:text="@string/fahrenheit_to_celsius_converter"
         android:textAlignment="center"
         android:textAllCaps="false"
-        android:textSize="30sp"
+        android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/txtFarenheit"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -71,7 +71,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="32dp"
         android:text="@string/calculate_degree"
-        android:textSize="18sp"
+        android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

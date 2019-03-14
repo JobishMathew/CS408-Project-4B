@@ -12,7 +12,7 @@ import android.view.MenuItem;
 import android.support.design.widget.*;
 import android.support.v4.view.*;
 
-public class TabLayoutDemoActivity extends AppCompatActivity {
+public class converterMainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,23 +21,14 @@ public class TabLayoutDemoActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
         configureTabLayout();
     }
 
     private void configureTabLayout() {
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tabLayout);
-        tabLayout.addTab(tabLayout.newTab().setText("Tab 1 Item"));
-        tabLayout.addTab(tabLayout.newTab().setText("Tab 2 Item"));
-        tabLayout.addTab(tabLayout.newTab().setText("Tab 3 Item"));
-        tabLayout.addTab(tabLayout.newTab().setText("Tab 4 Item"));
+        tabLayout.addTab(tabLayout.newTab().setText("\u2109 \u2194 \u2103"));
+        tabLayout.addTab(tabLayout.newTab().setText("M \u2194 KM"));
+        tabLayout.addTab(tabLayout.newTab().setText("Tip"));
         final ViewPager viewPager = (ViewPager) findViewById(R.id.pager);
         final PagerAdapter adapter = new TabPagerAdapter(getSupportFragmentManager(), tabLayout.getTabCount());
         viewPager.setAdapter(adapter);
